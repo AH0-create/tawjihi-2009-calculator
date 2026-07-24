@@ -6,36 +6,7 @@
 <meta name="theme-color" content="#071a36">
 <title>حاسبة معدل جيل 2009 من 30</title>
 <style>
-*{box-sizing:border-box}
-:root{--blue:#0876de;--dark:#071a36;--green:#087f5b;--muted:#6d7b8d}
-body{margin:0;min-height:100vh;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at top,#1d5f9f,#071a36 58%,#020913);padding:18px;color:#102033}
-.wrap{max-width:590px;margin:auto}
-.hero{text-align:center;color:#fff;padding:10px 0 18px}
-.hero h1{font-size:30px;margin:8px 0}
-.hero p{margin:0;color:#dcecff;line-height:1.7}
-.card{background:#fff;border-radius:24px;padding:21px;box-shadow:0 22px 65px #0007}
-.field{margin-bottom:14px}
-label{display:flex;justify-content:space-between;gap:8px;font-weight:800;margin-bottom:7px}
-label small{color:var(--muted);font-weight:400}
-input,select{width:100%;height:52px;border:1.5px solid #d7e1ed;border-radius:13px;padding:0 13px;font-size:17px;background:#f9fbfe;outline:none}
-input:focus,select:focus{border-color:#1688ff;box-shadow:0 0 0 4px #1688ff1c;background:#fff}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.error{display:none;background:#fff0f0;color:#b42318;padding:10px;border-radius:10px;margin:8px 0;line-height:1.6}
-.actions{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:8px}
-button{height:52px;border:0;border-radius:13px;font-size:16px;font-weight:800;cursor:pointer}
-.primary{background:linear-gradient(135deg,#075fca,#1793ff);color:#fff}
-.secondary{background:#edf2f7;color:#34445a;padding:0 18px}
-.result{display:none;text-align:center;margin-top:18px;background:linear-gradient(145deg,#eaf5ff,#eefcf7);border-radius:18px;padding:18px;border:1px solid #d9eee8}
-.result-name{font-size:21px;font-weight:900;margin-top:6px}
-.score{font-size:46px;font-weight:900;color:var(--green);direction:ltr;margin:4px 0}
-.result-buttons{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
-.save{background:#087f5b;color:#fff}
-.share{background:#146bc2;color:#fff}
-.status{font-size:13px;margin-top:10px;line-height:1.6}
-.note{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin:16px 0 0}
-.rights{text-align:center;color:#d7e8fa;font-size:12px;line-height:1.9;margin:16px 0 4px}
-canvas{display:none}
-@media(max-width:480px){.grid,.result-buttons{grid-template-columns:1fr}.card{padding:17px}.hero h1{font-size:26px}}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at top,#1d5f9f,#071a36 58%,#020913);padding:18px;color:#102033}.wrap{max-width:590px;margin:auto}.hero{text-align:center;color:#fff;padding:8px 0 18px}.hero h1{font-size:30px;margin:8px 0}.hero p{margin:0;color:#dcecff;line-height:1.7}.card{background:#fff;border-radius:24px;padding:21px;box-shadow:0 22px 65px #0007}.steps{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:19px}.step-pill{padding:8px 13px;border-radius:999px;background:#edf2f7;color:#64748b;font-size:13px;font-weight:800}.step-pill.active{background:#0f75dc;color:#fff}.line{height:2px;width:34px;background:#d7e1ed}.panel{display:none}.panel.active{display:block}.field{margin-bottom:14px}label{display:flex;justify-content:space-between;gap:8px;font-weight:800;margin-bottom:7px}label small{color:#6d7b8d;font-weight:400}input,select{width:100%;height:52px;border:1.5px solid #d7e1ed;border-radius:13px;padding:0 13px;font-size:17px;background:#f9fbfe;outline:none}input:focus,select:focus{border-color:#1688ff;box-shadow:0 0 0 4px #1688ff1c;background:#fff}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.error{display:none;background:#fff0f0;color:#b42318;padding:10px;border-radius:10px;margin:8px 0;line-height:1.6}.actions{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:8px}button{height:52px;border:0;border-radius:13px;font-size:16px;font-weight:800;cursor:pointer}.primary{background:linear-gradient(135deg,#075fca,#1793ff);color:#fff}.secondary{background:#edf2f7;color:#34445a;padding:0 18px}.summary{background:#f2f7fd;border:1px solid #dce8f5;border-radius:14px;padding:12px;margin-bottom:15px;font-size:13px;line-height:1.8}.result{display:none;text-align:center;margin-top:18px;background:linear-gradient(145deg,#eaf5ff,#eefcf7);border-radius:18px;padding:18px;border:1px solid #d9eee8}.result-name{font-size:21px;font-weight:900;margin-top:6px}.score{font-size:46px;font-weight:900;color:#087f5b;direction:ltr;margin:4px 0}.result-buttons{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.save{background:#087f5b;color:#fff}.share{background:#146bc2;color:#fff}.status{font-size:13px;margin-top:10px;line-height:1.6}.note{text-align:center;color:#6d7b8d;font-size:12px;line-height:1.7;margin:16px 0 0}.rights{text-align:center;color:#d7e8fa;font-size:12px;line-height:1.9;margin:16px 0 4px}.phone-note{font-size:12px;color:#64748b;margin-top:6px;line-height:1.6}canvas{display:none}@media(max-width:480px){.grid,.result-buttons{grid-template-columns:1fr}.card{padding:17px}.hero h1{font-size:26px}}
 </style>
 </head>
 <body>
@@ -43,27 +14,63 @@ canvas{display:none}
 <header class="hero">
 <div>النظام الجديد 30 / 70</div>
 <h1>حاسبة معدل جيل 2009</h1>
-<p>أدخل بياناتك وعلاماتك لتحصل على نتيجتك من 30 وصورة جاهزة للمشاركة</p>
+<p>سجّل بياناتك أولًا ثم أدخل علاماتك لتحصل على النتيجة من 30</p>
 </header>
 <section class="card">
-<form id="calculatorForm">
-<div class="field"><label for="studentName">اسم الطالب الرباعي</label><input id="studentName" autocomplete="name" required placeholder="اكتب الاسم الكامل"></div>
-<div class="grid">
-<div class="field"><label for="phone">رقم الهاتف</label><input id="phone" type="tel" inputmode="numeric" autocomplete="tel" required placeholder="07XXXXXXXX"></div>
-<div class="field"><label for="studyField">الحقل الدراسي</label><select id="studyField" required><option value="">اختر الحقل</option><option>الحقل الصحي</option><option>الحقل الهندسي والتكنولوجي</option><option>حقل العلوم الإنسانية والاجتماعية</option><option>حقل الأعمال</option></select></div>
+<div class="steps">
+<div id="stepOnePill" class="step-pill active">1 التسجيل</div>
+<div class="line"></div>
+<div id="stepTwoPill" class="step-pill">2 العلامات</div>
 </div>
-<div class="grid">
-<div class="field"><label for="arabic">اللغة العربية <small>من 100</small></label><input id="arabic" type="number" inputmode="decimal" min="0" max="100" step="0.01" required placeholder="مثال: 85"></div>
-<div class="field"><label for="english">اللغة الإنجليزية <small>من 100</small></label><input id="english" type="number" inputmode="decimal" min="0" max="100" step="0.01" required placeholder="مثال: 90"></div>
-<div class="field"><label for="islamic">التربية الإسلامية <small>من 60</small></label><input id="islamic" type="number" inputmode="decimal" min="0" max="60" step="0.01" required placeholder="مثال: 55"></div>
-<div class="field"><label for="history">تاريخ الأردن <small>من 40</small></label><input id="history" type="number" inputmode="decimal" min="0" max="40" step="0.01" required placeholder="مثال: 36"></div>
+
+<section id="registrationPanel" class="panel active">
+<div class="field">
+<label for="phone">رقم الهاتف <small>يبدأ بـ077 أو 078 أو 079</small></label>
+<input id="phone" type="tel" inputmode="numeric" autocomplete="tel" maxlength="10" placeholder="07XXXXXXXX">
+<div class="phone-note">يتم التحقق من صيغة الرقم الأردني. التحقق من ملكية الرقم نفسه يحتاج كود SMS أو واتساب.</div>
 </div>
-<div id="errorBox" class="error"></div>
-<div class="actions"><button class="primary" type="submit">احسب المعدل وأظهر النتيجة</button><button class="secondary" type="button" id="resetButton">مسح</button></div>
-</form>
+<div class="field">
+<label for="studentName">اسم الطالب الرباعي</label>
+<input id="studentName" autocomplete="name" placeholder="اكتب الاسم الكامل">
+</div>
+<div class="field">
+<label for="studyField">الحقل الدراسي</label>
+<select id="studyField">
+<option value="">اختر الحقل</option>
+<option>الحقل الصحي</option>
+<option>الحقل الهندسي والتكنولوجي</option>
+<option>حقل العلوم الإنسانية والاجتماعية</option>
+<option>حقل الأعمال</option>
+</select>
+</div>
+<div id="registrationError" class="error"></div>
+<button id="continueButton" class="primary" style="width:100%">متابعة لإدخال العلامات</button>
+</section>
+
+<section id="marksPanel" class="panel">
+<div id="studentSummary" class="summary"></div>
+<div class="grid">
+<div class="field"><label for="arabic">اللغة العربية <small>من 100</small></label><input id="arabic" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="مثال: 85"></div>
+<div class="field"><label for="english">اللغة الإنجليزية <small>من 100</small></label><input id="english" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="مثال: 90"></div>
+<div class="field"><label for="islamic">التربية الإسلامية <small>من 60</small></label><input id="islamic" type="number" inputmode="decimal" min="0" max="60" step="0.01" placeholder="مثال: 55"></div>
+<div class="field"><label for="history">تاريخ الأردن <small>من 40</small></label><input id="history" type="number" inputmode="decimal" min="0" max="40" step="0.01" placeholder="مثال: 36"></div>
+</div>
+<div id="marksError" class="error"></div>
+<div class="actions">
+<button id="calculateButton" class="primary">احسب المعدل وأظهر النتيجة</button>
+<button id="backButton" class="secondary">رجوع</button>
+</div>
+</section>
+
 <div id="resultBox" class="result">
-<div>نتيجة الطالب</div><div id="resultName" class="result-name"></div><div class="score"><span id="resultScore">0.00</span> / 30</div><div id="resultField"></div>
-<div class="result-buttons"><button id="downloadButton" class="save">تحميل النتيجة كصورة</button><button id="shareButton" class="share">مشاركة النتيجة</button></div>
+<div>نتيجة الطالب</div>
+<div id="resultName" class="result-name"></div>
+<div class="score"><span id="resultScore">0.00</span> / 30</div>
+<div id="resultField"></div>
+<div class="result-buttons">
+<button id="downloadButton" class="save">تحميل النتيجة كصورة</button>
+<button id="shareButton" class="share">مشاركة النتيجة</button>
+</div>
 <div id="saveStatus" class="status"></div>
 </div>
 <p class="note">يتم جمع علامات المواد الأربع من أصل 300 ثم قسمة المجموع على 10 لإظهار النتيجة من 30.</p>
@@ -74,16 +81,100 @@ canvas{display:none}
 <script>
 const SHEET_WEB_APP_URL='https://script.google.com/macros/s/AKfycby4IV9gWX7Rr0ivg7JGWUFOgz3Jgvdtdjb1iKDr-2Puip6Ubyv1679uQEtiS2Fy-VHQ/exec';
 const limits={arabic:100,english:100,islamic:60,history:40};
-const $=id=>document.getElementById(id);let latestResult=null;let latestImageBlob=null;
-function showError(message){$('errorBox').textContent=message;$('errorBox').style.display='block'}
-function hideError(){$('errorBox').style.display='none'}
-function validateAndCalculate(){const name=$('studentName').value.trim();const phone=$('phone').value.replace(/\s/g,'');const field=$('studyField').value;if(name.length<4)throw new Error('اكتب اسم الطالب بشكل صحيح');if(!/^07\d{8}$/.test(phone))throw new Error('رقم الهاتف لازم يبدأ بـ 07 ويتكوّن من 10 أرقام');if(!field)throw new Error('اختر الحقل الدراسي');let total=0;const marks={};for(const[id,max]of Object.entries(limits)){const raw=$(id).value;const value=Number(raw);if(raw===''||!Number.isFinite(value)||value<0||value>max)throw new Error('تأكد من إدخال جميع العلامات ضمن الحدود الصحيحة');marks[id]=value;total+=value}return{timestamp:new Date().toISOString(),name,phone,field,arabic:marks.arabic,english:marks.english,islamic:marks.islamic,history:marks.history,total,score:(total/10).toFixed(2)}}
-async function saveToSheet(data){try{await fetch(SHEET_WEB_APP_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data)});$('saveStatus').textContent='تم حفظ البيانات بنجاح';$('saveStatus').style.color='#087f5b'}catch(e){$('saveStatus').textContent='ظهرت النتيجة لكن تعذر حفظ البيانات في الشيت';$('saveStatus').style.color='#b42318'}}
-function drawResultImage(data){const canvas=$('resultCanvas');const ctx=canvas.getContext('2d');const gradient=ctx.createLinearGradient(0,0,1080,1350);gradient.addColorStop(0,'#06152d');gradient.addColorStop(.55,'#0a3d72');gradient.addColorStop(1,'#157eb9');ctx.fillStyle=gradient;ctx.fillRect(0,0,1080,1350);ctx.textAlign='center';ctx.direction='rtl';ctx.fillStyle='#fff';ctx.font='bold 58px Tahoma';ctx.fillText('نتيجة جيل 2009',540,145);ctx.fillStyle='#d9edff';ctx.font='30px Tahoma';ctx.fillText('معدل مواد الصف الحادي عشر من 30',540,205);ctx.fillStyle='#fff';ctx.font='bold 48px Tahoma';ctx.fillText(data.name,540,305);ctx.fillStyle='#cce8ff';ctx.font='34px Tahoma';ctx.fillText(data.field,540,365);ctx.fillStyle='#fff';ctx.font='bold 135px Tahoma';ctx.fillText(data.score+' / 30',540,570);ctx.fillStyle='rgba(255,255,255,.12)';ctx.fillRect(120,655,840,330);ctx.fillStyle='#fff';ctx.font='34px Tahoma';ctx.fillText('اللغة العربية: '+data.arabic+' / 100',540,735);ctx.fillText('اللغة الإنجليزية: '+data.english+' / 100',540,805);ctx.fillText('التربية الإسلامية: '+data.islamic+' / 60',540,875);ctx.fillText('تاريخ الأردن: '+data.history+' / 40',540,945);ctx.fillStyle='#d7eaff';ctx.font='27px Tahoma';ctx.fillText('جميع الحقوق محفوظة',540,1125);ctx.fillText('الأستاذ رشاد حسن — فيزياء',540,1180);ctx.fillText('الأستاذ رائد الناطور — ثقافة مالية',540,1230);return new Promise(resolve=>canvas.toBlob(resolve,'image/png',1))}
-$('calculatorForm').addEventListener('submit',async event=>{event.preventDefault();hideError();$('saveStatus').textContent='';try{latestResult=validateAndCalculate();$('resultName').textContent=latestResult.name;$('resultScore').textContent=latestResult.score;$('resultField').textContent=latestResult.field;$('resultBox').style.display='block';latestImageBlob=await drawResultImage(latestResult);$('resultBox').scrollIntoView({behavior:'smooth',block:'nearest'});await saveToSheet(latestResult)}catch(error){showError(error.message)}});
-$('resetButton').addEventListener('click',()=>{$('calculatorForm').reset();$('resultBox').style.display='none';hideError();latestResult=null;latestImageBlob=null});
-$('downloadButton').addEventListener('click',async()=>{if(!latestResult)return;if(!latestImageBlob)latestImageBlob=await drawResultImage(latestResult);const url=URL.createObjectURL(latestImageBlob);const link=document.createElement('a');link.href=url;link.download='نتيجة-'+latestResult.name+'.png';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
-$('shareButton').addEventListener('click',async()=>{if(!latestResult)return;if(!latestImageBlob)latestImageBlob=await drawResultImage(latestResult);const file=new File([latestImageBlob],'نتيجة-'+latestResult.name+'.png',{type:'image/png'});if(navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({title:'نتيجة جيل 2009',text:'نتيجتي في مواد الصف الحادي عشر: '+latestResult.score+' من 30',files:[file]})}catch(e){}}else{const text=encodeURIComponent('نتيجتي في مواد الصف الحادي عشر: '+latestResult.score+' من 30');window.open('https://wa.me/?text='+text,'_blank')}});
+const $=id=>document.getElementById(id);
+let registration=null,latestResult=null,latestImageBlob=null;
+
+function toEnglishDigits(value){return String(value).replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d))}
+function normalizePhone(value){
+let p=toEnglishDigits(value).replace(/[^\d+]/g,'');
+if(p.startsWith('+962'))p='0'+p.slice(4);
+if(p.startsWith('962'))p='0'+p.slice(3);
+return p;
+}
+function validJordanPhone(phone){return /^07[789]\d{7}$/.test(phone)}
+function showError(id,message){$(id).textContent=message;$(id).style.display='block'}
+function hideError(id){$(id).style.display='none'}
+function showStep(number){
+const first=number===1;
+$('registrationPanel').classList.toggle('active',first);
+$('marksPanel').classList.toggle('active',!first);
+$('stepOnePill').classList.toggle('active',first);
+$('stepTwoPill').classList.toggle('active',!first);
+$('resultBox').style.display='none';
+window.scrollTo({top:0,behavior:'smooth'});
+}
+
+$('phone').addEventListener('input',e=>{e.target.value=normalizePhone(e.target.value).slice(0,10)});
+
+$('continueButton').addEventListener('click',()=>{
+hideError('registrationError');
+const phone=normalizePhone($('phone').value);
+const name=$('studentName').value.trim().replace(/\s+/g,' ');
+const field=$('studyField').value;
+if(!validJordanPhone(phone))return showError('registrationError','اكتب رقمًا أردنيًا صحيحًا من 10 أرقام يبدأ بـ077 أو 078 أو 079');
+if(name.split(' ').filter(Boolean).length<3)return showError('registrationError','اكتب اسم الطالب الكامل بشكل صحيح');
+if(!field)return showError('registrationError','اختر الحقل الدراسي');
+registration={phone,name,field};
+$('studentSummary').innerHTML='<strong>'+name+'</strong><br>'+phone+'<br>'+field;
+showStep(2);
+});
+
+$('backButton').addEventListener('click',()=>showStep(1));
+
+function calculate(){
+hideError('marksError');
+if(!registration)return showStep(1);
+let total=0,marks={};
+for(const [id,max] of Object.entries(limits)){
+const raw=$(id).value,value=Number(raw);
+if(raw===''||!Number.isFinite(value)||value<0||value>max){showError('marksError','تأكد من إدخال جميع العلامات ضمن الحدود الصحيحة');return null}
+marks[id]=value;total+=value;
+}
+return{timestamp:new Date().toISOString(),name:registration.name,phone:registration.phone,field:registration.field,arabic:marks.arabic,english:marks.english,islamic:marks.islamic,history:marks.history,total,score:(total/10).toFixed(2)};
+}
+
+async function saveToSheet(data){
+$('saveStatus').textContent='جاري إرسال البيانات...';$('saveStatus').style.color='#64748b';
+try{
+const body=new URLSearchParams();
+Object.entries(data).forEach(([key,value])=>body.append(key,String(value)));
+await fetch(SHEET_WEB_APP_URL,{method:'POST',mode:'no-cors',body});
+$('saveStatus').textContent='تم إرسال البيانات إلى الشيت';$('saveStatus').style.color='#087f5b';
+}catch(e){
+$('saveStatus').textContent='تعذر إرسال البيانات إلى الشيت';$('saveStatus').style.color='#b42318';
+}
+}
+
+function drawResultImage(data){
+const canvas=$('resultCanvas'),ctx=canvas.getContext('2d'),gradient=ctx.createLinearGradient(0,0,1080,1350);
+gradient.addColorStop(0,'#06152d');gradient.addColorStop(.55,'#0a3d72');gradient.addColorStop(1,'#157eb9');ctx.fillStyle=gradient;ctx.fillRect(0,0,1080,1350);
+ctx.textAlign='center';ctx.direction='rtl';ctx.fillStyle='#fff';ctx.font='bold 58px Tahoma';ctx.fillText('نتيجة جيل 2009',540,145);
+ctx.fillStyle='#d9edff';ctx.font='30px Tahoma';ctx.fillText('معدل مواد الصف الحادي عشر من 30',540,205);
+ctx.fillStyle='#fff';ctx.font='bold 48px Tahoma';ctx.fillText(data.name,540,305);
+ctx.fillStyle='#cce8ff';ctx.font='34px Tahoma';ctx.fillText(data.field,540,365);
+ctx.fillStyle='#fff';ctx.font='bold 135px Tahoma';ctx.fillText(data.score+' / 30',540,570);
+ctx.fillStyle='rgba(255,255,255,.12)';ctx.fillRect(120,655,840,330);
+ctx.fillStyle='#fff';ctx.font='34px Tahoma';ctx.fillText('اللغة العربية: '+data.arabic+' / 100',540,735);ctx.fillText('اللغة الإنجليزية: '+data.english+' / 100',540,805);ctx.fillText('التربية الإسلامية: '+data.islamic+' / 60',540,875);ctx.fillText('تاريخ الأردن: '+data.history+' / 40',540,945);
+ctx.fillStyle='#d7eaff';ctx.font='27px Tahoma';ctx.fillText('جميع الحقوق محفوظة',540,1125);ctx.fillText('الأستاذ رشاد حسن — فيزياء',540,1180);ctx.fillText('الأستاذ رائد الناطور — ثقافة مالية',540,1230);
+return new Promise(resolve=>canvas.toBlob(resolve,'image/png',1));
+}
+
+$('calculateButton').addEventListener('click',async()=>{
+const data=calculate();if(!data)return;
+latestResult=data;$('resultName').textContent=data.name;$('resultScore').textContent=data.score;$('resultField').textContent=data.field;
+$('resultBox').style.display='block';latestImageBlob=await drawResultImage(data);$('resultBox').scrollIntoView({behavior:'smooth',block:'nearest'});await saveToSheet(data);
+});
+
+$('downloadButton').addEventListener('click',async()=>{
+if(!latestResult)return;if(!latestImageBlob)latestImageBlob=await drawResultImage(latestResult);
+const url=URL.createObjectURL(latestImageBlob),link=document.createElement('a');link.href=url;link.download='نتيجة-'+latestResult.name+'.png';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+$('shareButton').addEventListener('click',async()=>{
+if(!latestResult)return;if(!latestImageBlob)latestImageBlob=await drawResultImage(latestResult);
+const file=new File([latestImageBlob],'نتيجة-'+latestResult.name+'.png',{type:'image/png'});
+if(navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({title:'نتيجة جيل 2009',text:'نتيجتي: '+latestResult.score+' من 30',files:[file]})}catch(e){}}
+else window.open('https://wa.me/?text='+encodeURIComponent('نتيجتي: '+latestResult.score+' من 30'),'_blank');
+});
 </script>
 </body>
 </html>
